@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <script>
+
+        function fe()
+        {
+            var flip=document.getElementById("flipkart").value
+            var amaz=document.getElementById("amazon").value
+            if(flip>amaz)
+            {
+                document.getElementById("show").value="amazon"+" "+amaz
+
+            }
+            else
+            {
+                document.getElementById("show").value="flipkat"+" "+flip
+            }
+
+        }
+    
+       
+        
+    </script>
+    <div class="nav">
+        <div class="logo">
+            <h1>scrum 5</h1>
+        </div>
+
+
+        <div class="op">
+            <select name="" id="se">
+                <option value="">moblie</option>
+                <option value="">television</option>
+            </select>
+        </div>
+    </div>
+
+
+        <div class="price">
+            <h1 id="cat"></h1>
+            <label for="flipkart" >flipkart</label>
+            <button><a href="https://www.bestbuy.com/site/electronics/top-deals/pcmcat1563299784494.c?id=pcmcat1563299784494&ref=212&loc=1&ds_rl=1260402&ref=212&loc=DWA&msclkid=e10fbde01a651e354427dc73b4c562df&gclid=e10fbde01a651e354427dc73b4c562df&gclsrc=3p.ds">Buy now</a></button>
+            <input type="text" id="flipkart" >
+            <label for="amazon">amazon</label>
+            <button><a href="https://www.amazon.in/amazonprime">buy now</a></button>
+            <input type="text" name="" value="" id="amazon">
+            <input type="submit" id="btn1" onclick="fe()">
+            <input type="text" id="show">
+        </div>
+        <input type="text" id="show">
+    </div>
+    
+</body>
+</html>
